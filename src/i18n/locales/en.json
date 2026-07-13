@@ -1,0 +1,65 @@
+{
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "hero": {
+    "motto": "Freshness Crafted Beautifully",
+    "cta_order": "Order Now",
+    "cta_menu": "View Menu",
+    "badge": "Made with Love 🍓"
+  },
+  "menu": {
+    "title": "Our Menu",
+    "subtitle": "Every platter is crafted with care from the finest fresh fruits",
+    "order_now": "Order via WhatsApp",
+    "platter": {
+      "name": "Fruit Platter",
+      "description": "A luxurious arrangement of the finest carefully selected fresh fruits, presented artistically to delight the eyes and the palate."
+    },
+    "ship": {
+      "name": "Fruit Ship",
+      "description": "A spectacular 1-meter long fruit ship — perfect for celebrations and large events. A stunning visual display with generous portions."
+    },
+    "sushi": {
+      "name": "Fruit Sushi",
+      "description": "Creative fruit sushi rolls made with fresh fruits, combining beauty and wonderful flavor in every bite."
+    },
+    "fakhfakhina": {
+      "name": "Fakhfakhina",
+      "description": "Rich fruit cocktail with fresh fruit chunks, topped with a delicious scoop of ice cream and optional add-ons."
+    },
+    "size": {
+      "small": "Small",
+      "medium": "Medium",
+      "large": "Large",
+      "one_meter": "1 Meter"
+    },
+    "size_detail": {
+      "sushi_small": "1 roll",
+      "sushi_medium": "3 rolls",
+      "sushi_large": "5 rolls"
+    },
+    "currency": "₪"
+  },
+  "gallery": {
+    "title": "Photo Gallery",
+    "subtitle": "Moments of creativity and beauty — every platter tells a story"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We're here to make your occasion unforgettable",
+    "whatsapp": "Order via WhatsApp",
+    "instagram": "Follow on Instagram",
+    "location": "Maghar, Israel",
+    "delivery": "Delivery Available",
+    "orders_via": "Orders via WhatsApp",
+    "phone": "0527749114"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "tagline": "Freshness Crafted Beautifully"
+  }
+}
