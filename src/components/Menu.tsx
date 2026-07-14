@@ -186,13 +186,14 @@ const MenuCard: React.FC<MenuCardProps> = ({ item, index, t, getSushiDetail, bui
 
         {/* Main order button */}
         <a
-          href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`مرحباً، أريد الطلب: ${t(item.nameKey)}`)}`}
+          href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Hello, I would like to order: ${t(item.nameKey)}`)}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn-whatsapp w-full flex items-center justify-center gap-2 py-3 rounded-xl font-semibold text-sm"
+          className="btn-whatsapp w-full flex items-center justify-center gap-2 py-3 rounded-xl font-semibold text-sm relative overflow-hidden"
         >
           <MessageCircle size={17} />
           {t('menu.order_now')}
+          <span className="cart-shine" />
         </a>
       </div>
     </motion.div>
