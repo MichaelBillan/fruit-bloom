@@ -86,7 +86,7 @@ const MenuCard: React.FC<MenuCardProps> = ({ item, index, t, getSushiDetail, bui
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 15 }}
+      initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       whileHover={{ y: -6 }}
       viewport={{ once: true, amount: 0.15 }}
