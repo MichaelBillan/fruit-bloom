@@ -11,7 +11,7 @@ import type { Language } from '../types';
 
 const App: React.FC = () => {
   const { i18n } = useTranslation();
-  const [currentLang, setCurrentLang] = useState<Language>('ar');
+  const [currentLang, setCurrentLang] = useState<Language>('he');
 
   const rtlLangs: Language[] = ['ar', 'he'];
 
@@ -24,9 +24,9 @@ const App: React.FC = () => {
   };
 
   useEffect(() => {
-    // Set initial RTL for Arabic
+    // Set initial RTL for Hebrew
     document.documentElement.dir = 'rtl';
-    document.documentElement.lang = 'ar';
+    document.documentElement.lang = 'he';
   }, []);
 
   return (

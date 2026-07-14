@@ -86,10 +86,10 @@ const MenuCard: React.FC<MenuCardProps> = ({ item, index, t, getSushiDetail, bui
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 40 }}
+      initial={{ opacity: 0, y: 15 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.6, delay: index * 0.12 }}
+      viewport={{ once: true, amount: 0.15 }}
+      transition={{ duration: 0.7, delay: index * 0.08, ease: 'easeOut' }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       className="group rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
@@ -171,11 +171,12 @@ const MenuCard: React.FC<MenuCardProps> = ({ item, index, t, getSushiDetail, bui
                     href={buildWhatsAppMessage(t(item.nameKey), sizeLabel, size.price)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-8 h-8 rounded-full flex items-center justify-center transition-all duration-200 hover:scale-110"
+                    className="cart-shine-btn w-8 h-8 rounded-full flex items-center justify-center transition-all duration-200 hover:scale-110 relative overflow-hidden"
                     style={{ background: '#25D366', color: 'white' }}
                     title={t('menu.order_now')}
                   >
                     <ShoppingCart size={14} />
+                    <span className="cart-shine" />
                   </a>
                 </div>
               </div>

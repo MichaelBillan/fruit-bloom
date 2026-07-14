@@ -120,3 +120,41 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 10px 30px rgba(200, 151, 42, 0.4);
 }
+
+/* Shopping cart shine animation */
+@keyframes cart-shine-move {
+  0% {
+    left: -75%;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    left: 125%;
+    opacity: 0.6;
+  }
+  100% {
+    left: 125%;
+    opacity: 0;
+  }
+}
+
+.cart-shine {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 20%,
+    rgba(255, 255, 255, 0.65) 50%,
+    rgba(255, 255, 255, 0) 80%
+  );
+  transform: skewX(-15deg);
+  animation: cart-shine-move 2.5s ease-in-out infinite;
+  pointer-events: none;
+  border-radius: 50%;
+}
+
