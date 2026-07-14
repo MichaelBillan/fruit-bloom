@@ -17,7 +17,8 @@ const MenuSection: React.FC = () => {
   };
 
   const buildWhatsAppMessage = (itemName: string, size: string, price: number) => {
-    const msg = encodeURIComponent(`مرحباً، أريد الطلب:\n🛒 ${itemName} - ${size} - ${price}₪`);
+    const greeting = t('menu.whatsapp_greeting');
+    const msg = encodeURIComponent(`${greeting}\n🛒 ${itemName} - ${size} - ${price}₪`);
     return `https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`;
   };
 
@@ -186,7 +187,7 @@ const MenuCard: React.FC<MenuCardProps> = ({ item, index, t, getSushiDetail, bui
 
         {/* Main order button */}
         <a
-          href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Hello, I would like to order: ${t(item.nameKey)}`)}`}
+          href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`${t('menu.whatsapp_greeting')} ${t(item.nameKey)}`)}`}
           target="_blank"
           rel="noopener noreferrer"
           className="btn-whatsapp w-full flex items-center justify-center gap-2 py-3 rounded-xl font-semibold text-sm relative overflow-hidden"

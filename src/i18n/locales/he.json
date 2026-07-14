@@ -42,7 +42,8 @@
       "sushi_medium": "3 רולים",
       "sushi_large": "5 רולים"
     },
-    "currency": "₪"
+    "currency": "₪",
+    "whatsapp_greeting": "שלום, אני רוצה להזמין:"
   },
   "gallery": {
     "title": "גלריית תמונות",

@@ -42,7 +42,8 @@
       "sushi_medium": "3 لفافات",
       "sushi_large": "5 لفافات"
     },
-    "currency": "₪"
+    "currency": "₪",
+    "whatsapp_greeting": "مرحباً، أريد الطلب:"
   },
   "gallery": {
     "title": "معرض الصور",

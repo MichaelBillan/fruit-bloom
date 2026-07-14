@@ -42,7 +42,8 @@
       "sushi_medium": "3 rolls",
       "sushi_large": "5 rolls"
     },
-    "currency": "₪"
+    "currency": "₪",
+    "whatsapp_greeting": "Hello, I would like to order:"
   },
   "gallery": {
     "title": "Photo Gallery",
