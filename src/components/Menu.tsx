@@ -88,15 +88,15 @@ const MenuCard: React.FC<MenuCardProps> = ({ item, index, t, getSushiDetail, bui
     <motion.div
       initial={{ opacity: 0, y: 15 }}
       whileInView={{ opacity: 1, y: 0 }}
+      whileHover={{ y: -6 }}
       viewport={{ once: true, amount: 0.15 }}
       transition={{ duration: 0.7, delay: index * 0.08, ease: 'easeOut' }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="group rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
+      className="group rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-500"
       style={{
         background: 'white',
         border: hovered ? '1px solid rgba(200,151,42,0.4)' : '1px solid rgba(200,151,42,0.1)',
-        transform: hovered ? 'translateY(-6px)' : 'translateY(0)',
       }}
     >
       {/* Image */}
